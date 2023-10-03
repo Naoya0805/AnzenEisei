@@ -68,9 +68,9 @@ const quiz = [
   //点数表記
   const showEnd = () => {
     if (score === quizLen) {
-    $question.textContent = '最初からもう一回！！スコアは' + Math.round( score / quizLen * 100 ) + '点です';
+    $question.textContent = '完璧！ちゃんと聞いてくれてありがとうございます！スコアは' + Math.round( score / quizLen * 100 ) + '点です';
     } else {
-    $question.textContent = '完璧！今月もご安全に！ あなたのスコアは' + Math.round( score / quizLen * 100) + '点です';
+    $question.textContent = '最初からもう一回！ あなたのスコアは' + Math.round( score / quizLen * 100) + '点です';
       }
     const $items = $doc.getElementById('js-items');
     $items.style.visibility = 'hidden';
