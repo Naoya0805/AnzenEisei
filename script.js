@@ -1,27 +1,27 @@
 //問題文をオリジナルに書き換え
 const quiz = [
     {
-      question: '4SのSは【整理】【整頓】【清掃】あとひとつは？',
-      answers: [ '掃除', '正常', '躾', '清潔'],
-      correct: '清潔'
+      question: '救急・消防が発生した際、ワンタップで通報が出来るアプリ。その名前は？',
+      answers: [ '簡単通報アプリ', '拠点通報アプリ', '緊急通報アプリ', '保安通報アプリ'],
+      correct: '保安通報アプリ'
     }, {
-      question: '本日紹介した災害事例は何件？',
-      answers: [ '3件', '4件', '5件', '6件'],
-      correct: '5件'
+      question: '全社災害、9月25日時点での累計件数は？',
+      answers: [ '8件', '18件', '26件', '36件'],
+      correct: '26件'
     }, {
-      question: 'ホースリール分解の事例が発生した工場はどこ？',
-      answers: [ '元町工場', '明知工場', '堤工場', '衣浦工場'],
-      correct: '堤工場'
+      question: '歩行災害撲滅 10月度のこだわり宣言は？',
+      answers: [ '周囲に優しく、思いやりを持って気を配った歩行をします！', '周囲に注意し、安全な歩行を心がけます！', '一歩踏み出す前の安全確認よし！', '時間にゆとりをもって行動しよう！'],
+      correct: '周囲に優しく、思いやりを持って気を配った歩行をします！'
     }
     , {
-      question: '8月度の安全衛生点検　今回の指摘事項であがっていない事例は？',
-      answers: [ 'パーテーションの散乱', 'カーペット無し', '机上の４S不良', 'ロッカーの付箋'],
-      correct: '机上の４S不良'
+      question: '本社工場での踏み台での災害、受傷者が左手に持っていたものは？',
+      answers: [ 'ホース', '採液カップ', '手動ポンプ', 'ドライバー'],
+      correct: '手動ポンプ'
     }
     , {
-      question: 'もうすぐ実施をお願いする安全運転診断　その名称は？',
-      answers: [ 'DOCCS', 'DOGS', 'DOCKS', 'DOCS'],
-      correct: 'DOCCS'
+      question: 'テレワークを行う際の最適な机上の照度は？',
+      answers: [ '50ルクス', '100ルクス', '200ルクス', '400ルクス'],
+      correct: '400ルクス'
     }
   ];
   
@@ -68,9 +68,9 @@ const quiz = [
   //点数表記
   const showEnd = () => {
     if (score === quizLen) {
-    $question.textContent = '来月の安全担当はみなさんひとりひとりです！スコアは' + Math.round( score / quizLen * 100 ) + '点です';
+    $question.textContent = '最初からもう一回！！スコアは' + Math.round( score / quizLen * 100 ) + '点です';
     } else {
-    $question.textContent = '来月の安全担当はみなさんひとりひとりです！ あなたのスコアは' + Math.round( score / quizLen * 100) + '点です';
+    $question.textContent = '完璧！今月もご安全に！ あなたのスコアは' + Math.round( score / quizLen * 100) + '点です';
       }
     const $items = $doc.getElementById('js-items');
     $items.style.visibility = 'hidden';
